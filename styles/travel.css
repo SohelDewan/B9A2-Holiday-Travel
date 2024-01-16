@@ -256,7 +256,7 @@ button {
   font-weight: 800;
   padding: 10px 0;
 }
-.choose-card{
+.choose-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -264,7 +264,9 @@ button {
   gap: 40px;
   padding: 10px;
 }
-.card-1, .card-2, .card-3 {
+.card-1,
+.card-2,
+.card-3 {
   border-radius: 16px;
   border: 1px solid rgba(251, 181, 99, 0.2);
   background: rgba(251, 181, 99, 0.05);
@@ -272,14 +274,68 @@ button {
   padding: 30px;
   transition: all linear 0.4s;
 }
-.card-3{
+.card-3 {
   width: 100%;
   margin: 0 auto;
 }
-.hover:hover{
+.hover:hover {
   border-radius: 16px;
-border: 1px solid rgba(41, 206, 246, 0.20);
-background: rgba(41, 206, 246, 0.05);
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+
+/* Newsletter part styles */
+.news-container {
+  display: flex;
+  margin: 30px auto;
+  gap: 3%;
+}
+.news-form {
+  width: 40%;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  padding: 25px;
+  max-width: 474px;
+}
+.news-offer {
+  width: 57%;
+}
+.news-form input {
+  color: rgba(19, 19, 24, 0.3);
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  width: 380px;
+  height: 52px;
+  flex-shrink: 0;
+  margin: 10px 0;
+  padding-left: 30px;
+  outline: none;
+  border: 0;
+}
+.btn-width {
+  width: 380px;
+  margin-top: 10px;
+}
+.overlay-offer {
+  position: relative;
+  right: -340px;
+  bottom: 170px;
+  border-radius: 16px;
+  background: #ff5400;
+  width: 324px;
+  height: 120px;
+  transform: rotate(-19.628deg);
+  color: #fff;
+  font-size: 32px;
+  padding: 10px;
+  font-weight: 800;
+  text-align: center;
+}
+.overlay-offer h5{
+  font-size: 24px;
+  font-weight: 400;
 }
 
 /* Media quary or responsive for mobile device */
@@ -353,13 +409,33 @@ background: rgba(41, 206, 246, 0.05);
   .overlay {
     font-size: 20px;
   }
-  .choose-card{
+  .choose-card {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
   .choose-text {
     text-align: center;
     padding: 20px 50px;
+  }
+  .news-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .news-form {
+    min-width: 440px;
+    margin-bottom: 30px;
+  }
+  .news-offer .image img {
+    width: 100%;
+    min-width: 440px;
+  }
+  .overlay-offer {
+    right: -186px;
+    bottom: 132px;
+    border-radius: 16px;
+    width: 250px;
+    height: 92px;
+    font-size: 20px;
 }
 }
 
