@@ -55,6 +55,9 @@ section {
   font-size: 36px;
   font-weight: 800;
 }
+.hamburger{
+  display: none;
+}
 nav {
   display: flex;
   padding: 3px;
@@ -151,13 +154,17 @@ button {
     margin: 0 auto;
     padding: 10px;
   }
+  .hamburger{
+    display: block;
+  }
+  .menu{
+    display: none;
+  }
   .logo h3,span{
     font-size: 22px !important;
     line-height: 36px;
   }
-  nav {
-    flex-direction: column;
-  }
+ 
   nav > ul {
     margin-top: 20px;
   }
@@ -179,6 +186,50 @@ button {
   .banner-form {
     flex-direction: column;
     max-width: 400px;
+    padding: 20px 50px;
+    text-align: center;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+/* For Tablet device */
+@media screen and (min-width: 600px) and (max-width:992px) {
+  .header,
+  section {
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .logo h3,span{
+    font-size: 32px !important;
+    line-height: 36px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav > ul {
+    margin-top: 20px;
+  }
+  nav > ul > li {
+    margin-right: 14px;
+  }
+  nav > ul > li > a {
+    font-size: 16px;
+  }
+  .banner {
+    padding: 50px 120px;
+  }
+  .banner h2 {
+    font-size: 32px;
+  }
+  .banner p {
+    font-size: 16px;
+  }
+  .banner-form {
+    flex-direction: column;
+    max-width: 400px;
+    padding: 20px 30px;
     text-align: center;
     align-items: flex-start;
     gap: 16px;

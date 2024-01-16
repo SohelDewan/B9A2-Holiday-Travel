@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holiday Travel</title>
     <link rel="stylesheet" href="styles/travel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header class="header">
@@ -13,7 +14,8 @@
             <img src="Images/Group 40071 (2).png" alt="">
       <h3>Holiday<span class="text-orange">Travel</span></h3>
         </div>
-            <ul>
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <ul class="menu">
                 <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">Packegs</a></li>
                 <li><a href="#">Testimonial</a></li>
@@ -56,5 +58,11 @@
 
     </footer>
 
+    <script>
+        document.querySelector('.hamburger-icon').addEventListener('click', function() {
+  document.querySelector('.menu').classList.toggle('show');
+});
+
+    </script>
 </body>
 </html>
