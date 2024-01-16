@@ -172,14 +172,69 @@ button {
   font-weight: 400;
   line-height: 26px; /* 162.5% */
 }
-.tour-text>ul>li{
-  list-style:disc;
+.tour-text > ul > li {
+  list-style: disc;
   margin: 10px 20px;
 }
-.tour-image img{
+.tour-image img {
   width: 100%;
   width: 500px;
 }
+/* Your Destination part Styles */
+.destination {
+  margin-top: 80px;
+  text-align: center;
+}
+.destination > .desti-text > p {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+.desti-gallery {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 10px;
+  column-gap: 20px;
+  align-items: center;
+}
+.desti-gallery img {
+  width: 100%;
+  max-width: 100%;
+}
+.grid-item-1 {
+  grid-column: 1 / span 6;
+}
+.grid-item-2 {
+  grid-column: 7 / span 6;
+}
+.grid-item-3 {
+  grid-column: 1 / span 4;
+}
+.grid-item-4 {
+  grid-column: 5 / span 5;
+}
+.grid-item-5 {
+  grid-column: 10 / span 3;
+}
+.grid-item-6 {
+  grid-column: 1 / span 5;
+}
+.grid-item-7 {
+  grid-column: 6 / span 7;
+}
+/* .parent-image {
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 9;
+} */
 
 /* Media quary or responsive for mobile device */
 @media screen and (max-width: 600px) {
@@ -226,19 +281,29 @@ button {
     align-items: flex-start;
     gap: 16px;
   }
-  .popular-tours{
+  .popular-tours {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
   }
 
-  .tour-image img{
+  .tour-image img {
     width: 100%;
     max-width: 480px;
     overflow: hidden;
   }
-  
+  .desti-gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .desti-gallery img {
+    width: 100%;
+    width: 335px;
+    height: 176px;
+    flex-shrink: 0;
+  }
 }
 
 /* For Tablet device */
@@ -283,17 +348,16 @@ button {
     align-items: flex-start;
     gap: 16px;
   }
-  .popular-tours{
+  .popular-tours {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 50px;
   }
 
-  .tour-image img{
+  .tour-image img {
     width: 100%;
     max-width: 980px;
     overflow: hidden;
   }
-
 }
