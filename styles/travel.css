@@ -26,6 +26,13 @@ ul li {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
+  cursor: pointer;
+  transition: all linear 0.4s;
+}
+.primary-btn:hover {
+  color: #ff5400;
+  background: transparent;
+  border: 1px solid #ff5400;
 }
 /* Header Styles */
 .header,
@@ -55,7 +62,7 @@ section {
   font-size: 36px;
   font-weight: 800;
 }
-.hamburger{
+.hamburger {
   display: none;
 }
 nav {
@@ -146,6 +153,33 @@ textarea {
 button {
   border: none;
 }
+/* Popular tour Styles */
+.popular-tours {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 100px;
+}
+.heading-text {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.heading-para {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.tour-text>ul>li{
+  list-style:disc;
+  margin: 10px 20px;
+}
+.tour-image img{
+  width: 100%;
+  width: 500px;
+}
 
 /* Media quary or responsive for mobile device */
 @media screen and (max-width: 600px) {
@@ -154,17 +188,18 @@ button {
     margin: 0 auto;
     padding: 10px;
   }
-  .hamburger{
+  .hamburger {
     display: block;
   }
-  .menu{
+  .menu {
     display: none;
   }
-  .logo h3,span{
+  .logo h3,
+  span {
     font-size: 22px !important;
     line-height: 36px;
   }
- 
+
   nav > ul {
     margin-top: 20px;
   }
@@ -191,17 +226,31 @@ button {
     align-items: flex-start;
     gap: 16px;
   }
+  .popular-tours{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .tour-image img{
+    width: 100%;
+    max-width: 480px;
+    overflow: hidden;
+  }
+  
 }
 
 /* For Tablet device */
-@media screen and (min-width: 600px) and (max-width:992px) {
+@media screen and (min-width: 600px) and (max-width: 992px) {
   .header,
   section {
     margin: 0 auto;
     padding: 10px;
   }
-  
-  .logo h3,span{
+
+  .logo h3,
+  span {
     font-size: 32px !important;
     line-height: 36px;
   }
@@ -234,4 +283,17 @@ button {
     align-items: flex-start;
     gap: 16px;
   }
+  .popular-tours{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .tour-image img{
+    width: 100%;
+    max-width: 980px;
+    overflow: hidden;
+  }
+
 }
