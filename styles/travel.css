@@ -242,6 +242,45 @@ button {
   font-size: 28px;
   font-weight: 800;
 }
+/* Why Choose part Style */
+.choose-us {
+  margin: 50px auto;
+}
+.choose-text {
+  text-align: center;
+  padding: 40px 150px;
+}
+.card-heading {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+  padding: 10px 0;
+}
+.choose-card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+}
+.card-1, .card-2, .card-3 {
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  max-width: 572px;
+  padding: 30px;
+  transition: all linear 0.4s;
+}
+.card-3{
+  width: 100%;
+  margin: 0 auto;
+}
+.hover:hover{
+  border-radius: 16px;
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+}
 
 /* Media quary or responsive for mobile device */
 @media screen and (max-width: 600px) {
@@ -311,9 +350,17 @@ button {
     height: 176px;
     flex-shrink: 0;
   }
-  .overlay{
+  .overlay {
     font-size: 20px;
   }
+  .choose-card{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .choose-text {
+    text-align: center;
+    padding: 20px 50px;
+}
 }
 
 /* For Tablet device */
