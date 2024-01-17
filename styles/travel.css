@@ -8,6 +8,9 @@
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 :root {
   --primary-color: #ff5400;
   --secondary-color: #131318;
@@ -21,6 +24,7 @@ ul li {
 }
 .primary-btn {
   border-radius: 8px;
+  border: 1px solid #ff5400;
   background: #ff5400;
   color: #fff;
   text-align: center;
@@ -32,7 +36,6 @@ ul li {
 .primary-btn:hover {
   color: #ff5400;
   background: transparent;
-  border: 1px solid #ff5400;
 }
 /* Header Styles */
 .header,
@@ -337,6 +340,8 @@ button {
   font-size: 24px;
   font-weight: 400;
 }
+
+/* Footer Styles */
 footer .container{
   background: rgba(19, 19, 24, 0.05);
   margin: 0 auto;
@@ -440,9 +445,9 @@ footer .social-links a:hover{
     max-width: 480px;
     overflow: hidden;
   }
-  .destination{
-    padding: 50px 80px;
-  }
+  .destination {
+    padding: 20px 40px;
+}
   .desti-gallery {
     display: flex;
     flex-direction: column;
@@ -494,13 +499,12 @@ footer .social-links a:hover{
     min-width: 340px;
   }
   .overlay-offer {
-    right: -156px;
-    bottom: 132px;
+    right: -158px;
+    bottom: 100px;
     border-radius: 16px;
     width: 180px;
-    height: 92px;
-    font-size: 14px;
-    display: none;
+    height: 72px;
+    font-size: 18px;
 }
 footer .container{
   padding: 50px 80px;
